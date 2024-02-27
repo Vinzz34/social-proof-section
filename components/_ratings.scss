@@ -1,0 +1,40 @@
+.ratings{
+    --gap: 1rem;
+    gap: var(--gap);
+
+    @media (min-width:70em){
+        justify-self: end;
+    }
+        
+    &__card{
+        padding-block: 1rem ;
+        background-color: var(--clr-neutral-200);
+        border-radius: 0.5rem;
+        flex-direction: column;
+        gap: var(--gap);
+
+        @media (min-width:70em){
+            width: 445px;
+            flex-direction: row;
+            padding: 1.25rem 2rem;
+
+            &:nth-child(1){
+                transform: translateX(-6rem);
+            }
+
+            &:nth-child(2){
+                transform: translateX(-3rem);
+            }
+        }
+    }
+
+    &__stars{
+        --gap: 0.5rem;
+        gap: var(--gap);
+    }
+
+    &__text{
+        color: var(--clr-primary-700);
+        font-weight: var(--fw-bolder);
+    }
+}

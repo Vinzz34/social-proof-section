@@ -1,0 +1,19 @@
+.grid{
+    display: grid;
+
+    &--ai{
+        align-items: center;
+    }
+}
+
+.flex{
+    display: flex;
+
+    &--jc{
+        justify-content: center;
+    }
+
+    &--ai{
+        align-items: center;
+    }
+}
